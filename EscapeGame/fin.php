@@ -25,13 +25,13 @@
             $pseudo = $ligne['pseudo'];
             $score = $ligne['score'];
        };
-       // Récuperation du pseudo et score du l'utilisateur. //
+       // Récuperation du pseudo et score du l'utilisateur pour afficher son résultat. //
        
        echo "<p>";
        echo "<img id='img_prisonnie'r src='prisonnier.png' width=200 height=200>";
        echo "</p>";
        echo "<p>";
-       echo "Bravo $pseudo, vous avez réussi à emprisonner le voleur au bout de $score secondes.";
+       echo "Bravo $pseudo, vous avez réussi à emprisonner le voleur au bout de $score secondes."; 
        echo "</p>";
 
        echo "<p>";
