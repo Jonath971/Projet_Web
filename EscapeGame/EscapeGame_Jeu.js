@@ -143,7 +143,7 @@ function Enigme_1(e) {
 mymap.on('click', Enigme_1);
 
 /**
-La fonction Enigme_1 permet de résoudre "la 2ème énigme".
+La fonction Enigme_2 permet de résoudre "la 2ème énigme".
 Trouver la planque de sa nouvelle maison.
  */
 function Enigme_2(e){
@@ -186,7 +186,7 @@ mymap.on('click', Enigme_2);
 
 
 /**
-La fonction Enigme_1 permet de résoudre "la 3ème énigme".
+La fonction Enigme_3 permet de résoudre "la 3ème énigme".
 Donner la pizza au concièrge pour récuperer un code permettant de rentrer dans la chambre du voleur.
  */
 function Enigme_3(e){
@@ -279,7 +279,7 @@ function Enigme_3(e){
             code = prompt("Ce n'est pas la bonne réponse, faites tourner vos méninges ! !")
         }
     codeconnu=2;
-    }
+    } //vérification du code rentré, la fenetre de dialogue reste là tant que le code est faux//
 
 });
 
@@ -289,7 +289,7 @@ mymap.on('click', Enigme_3);
 
 
 /**
-La fonction Enigme_1 permet de résoudre "la 4ème énigme".
+La fonction Enigme_4 permet de résoudre "la 4ème énigme".
 Trouver les indices qui permmettent de différencier les suspects les uns des autres pour finir d'enfermer le voleur.
  */
 function Enigme_4(e){
@@ -316,14 +316,15 @@ function Enigme_4(e){
         var bounds = L.latLngBounds([ bordure1_lat, bordure1_lon], [ bordure2_lat, bordure2_lon]);
         var overlay = L.imageOverlay( test[7].url, bounds);
         overlay.addTo(mymap);
-
+        //On affiche le lieu du premier indice sur la carte//
+        
         inventaire.push(test[7].id)
 
         document.getElementById('inventaire_suspects').style.height="110px";
         // On modifie la taille du CSS d'inventaire_suspects. //
 
         document.getElementById('inventaire_suspects').innerHTML = "<strong>Suspects:</strong><img id='voleur1' src='voleur1.jpg' width=100 height =100 style='z-index:1'><img id='voleur2' src='voleur2.jpg' width=100 height =100 style='z-index:1'><img id='voleur3' src='voleur3.jpg' width=100 height =100 style='z-index:1'><img id='voleur4' src='voleur4.jpg' width=100 height =100 style='z-index:1'>"
-        // On affiche les différrents suspects dans l'inventaire pour savoir à quoi il ressemble. //
+        // On affiche les différrents suspects dans l'inventaire pour savoir à quoi ils ressemblent. //
 
     }
 
@@ -342,6 +343,7 @@ function Enigme_4(e){
             var bounds = L.latLngBounds([ bordure1_lat, bordure1_lon], [ bordure2_lat, bordure2_lon]);
             var overlay = L.imageOverlay( test[8].url, bounds);
             overlay.addTo(mymap);
+            //on affiche le lieu du 2eme indice sur la carte//
     
             inventaire.push(test[8].id)
 
@@ -364,7 +366,7 @@ function Enigme_4(e){
                 var bounds = L.latLngBounds([ bordure1_lat, bordure1_lon], [ bordure2_lat, bordure2_lon]);
                 var overlay = L.imageOverlay( test[9].url, bounds);
                 overlay.addTo(mymap);
-        
+                //On affiche le lieu du dernier indice sur la carte//
                 inventaire.push(test[9].id)
 
                 document.getElementById('inventaire_suspects').innerHTML = "<strong>Suspects:</strong><img id='voleur1' src='voleur1barre.jpg' width=100 height =100 style='z-index:1'><img id='voleur2' src='voleur2barre.png' width=100 height =100 style='z-index:1'><img id='voleur3' src='voleur3.jpg' width=100 height =100 style='z-index:1'><img id='voleur4' src='voleur4.jpg' width=100 height =100 style='z-index:1'>"
@@ -400,7 +402,7 @@ function Enigme_4(e){
                     // On recupere le temps à la fin du jeu. //
 
                     score = (fin - debut)*(Math.pow(10,-3));
-                    // A l'aide du temps au début et à la fin de l'escapegame, on retrouve le temps qui l'a mis pour finir le jeu. //
+                    // A l'aide du temps au début et à la fin de l'escapegame, on retrouve le temps qu'il a mis pour finir le jeu. //
                     
 });
 
