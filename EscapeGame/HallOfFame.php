@@ -12,6 +12,7 @@
     <p>Hall Of Fame</p>
 </div>
 <?php
+    //connection à la base de données//
 $link = mysqli_connect('localhost', 'root', '', 'projetweb');
 
 if (!$link) {
@@ -47,8 +48,9 @@ if (!$link) {
         $len = sizeof($pseudo);
     ?>
 <table  BORDER = 1 id="tableau">
-                
+
 <?php
+    //On frabrique le tableau des meilleurs joueurs//
 for ($i = 0; $i < $len; $i++) {
 ?>
 <tr>
