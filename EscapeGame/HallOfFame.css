@@ -1,0 +1,87 @@
+body{
+    background-image: url(fonddoré.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  #tableau {
+    position: top;
+    margin-left: 20px;
+    margin-right:20px;
+    top:0;
+    color: rgb(211, 150, 80);
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black ;
+    
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  #titre {
+    position: top;
+    margin-left: 250px;
+    margin-right:250px;
+    
+    color: rgb(211, 150, 80);
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black ;
+    font-family: fantasy;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom:20px;
+
+  }
+  .boutonplay{
+    color: black;
+    background-color: rgb(211, 41, 41);
+    border-style: inset;
+    border-color: rgb(161, 133, 133);
+    border-width: 3px;
+    padding: 16px 32px;
+    width: 270px;
+    height: 70px;
+    cursor: pointer;
+    font-family: fantasy; 
+    font-size: 20px; 
+    text-align: center;
+    
+  }
+  .boutonexit{
+    color: rgb(11, 97, 33);
+    background-color: rgb(164, 175, 173);
+    border-style: inset;
+    border-color: rgb(161, 133, 133);
+    border-width: 3px;
+    padding: 5px 5px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    font-family: fantasy; 
+    font-size: 15px;
+    text-align: center;
+    
+    
+  }
+ #boutons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: absolute; 
+    left:0;
+    right:0;
+    bottom:20px;
+    
+ }

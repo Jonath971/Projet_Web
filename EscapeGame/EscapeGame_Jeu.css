@@ -1,0 +1,26 @@
+html{
+    background-image: url(fonddoré.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#titre{
+    position: top;
+    margin-left: 250px;
+    margin-right:250px;
+    
+    color: rgb(211, 150, 80);
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black ;
+    font-family: fantasy;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+#mapid { 
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 1500px;
+}
+
