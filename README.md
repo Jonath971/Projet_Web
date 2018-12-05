@@ -2,6 +2,7 @@
 Partiel de Projet Web 
 
 Pour jouer à notre EscapeGame, il faut importer notre base de donnée qui se nomme BDD_ProjetWeb.sql sur phpMyadmin.
-Il faut également placer toutes les images ainsi que les codes dans un seul dossier pour avoir accès à tous dont le serveur a besoin.
+Il faut également placer toutes les images ainsi que les codes dans un seul dossier (le www).
+Ensuite il suffit de lancer la page "page_accueil.html" pour lancer le jeu.
 
-Maintenant vous avez toutes les cartes en main pour experimenter notre magnifique EscapeGame !
+Maintenant vous avez toutes les cartes en main pour expérimenter notre EscapeGame !
